@@ -6,4 +6,7 @@
 
 <ModeWatcher />
 <Header />
-<slot></slot>
+
+<section class="mt-14">
+	<slot></slot>
+</section>

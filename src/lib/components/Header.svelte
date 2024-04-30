@@ -7,14 +7,14 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 </script>
 
-<nav class="backrop-blur flex flex-auto gap-4 border-b p-2">
+<nav class="backdrop fixed top-0 flex w-full flex-auto gap-4 border-b p-2 backdrop-blur">
 	<div class="LEFT-SIDE"></div>
 
 	<div class="RIGHT-SIDE ml-auto flex flex-initial items-center gap-4">
-		<a href="/">Home</a>
-		<Separator orientation="vertical" />
-		<a href="/about">About</a>
-		<Separator orientation="vertical" />
+		<a href="/" class=" font-semibold">Home</a>
+		<!-- <Separator orientation="vertical" /> -->
+		<a href="/about" class="font-semibold">About</a>
+		<!-- <Separator orientation="vertical" /> -->
 		<Button on:click={toggleMode} variant="outline" size="icon">
 			<Sun
 				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
