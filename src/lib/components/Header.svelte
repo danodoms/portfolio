@@ -7,8 +7,12 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 </script>
 
-<nav class="backdrop fixed top-0 flex w-full flex-auto gap-4 border-b p-2 backdrop-blur">
-	<div class="LEFT-SIDE"></div>
+<nav
+	class="backdrop fixed top-0 flex w-full flex-auto gap-4 border-b p-2 backdrop-blur-lg md:px-40"
+>
+	<div class="LEFT-SIDE my-auto flex-auto">
+		<p class="p-2 font-bold">dom.dev</p>
+	</div>
 
 	<div class="RIGHT-SIDE ml-auto flex flex-initial items-center gap-4">
 		<a href="/" class=" font-semibold">Home</a>

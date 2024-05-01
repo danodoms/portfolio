@@ -4,9 +4,9 @@
 	import { ModeWatcher } from 'mode-watcher';
 </script>
 
-<ModeWatcher />
 <Header />
+<ModeWatcher />
 
-<section class="mt-14">
+<section class="md:px-40">
 	<slot></slot>
 </section>
