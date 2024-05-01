@@ -1,7 +1,61 @@
-<script>
+<script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 	import Separator from '@/components/ui/separator/separator.svelte';
 	import { Badge } from '$lib/components/ui/badge';
+	import * as HoverCard from '$lib/components/ui/hover-card';
+
+	interface project {
+		title: string;
+		description: string;
+		link: string;
+		repo: string;
+		images: string[];
+		technologies: string[];
+		contributors: contributor[];
+	}
+
+	interface contributor {
+		alias: string;
+		name: string;
+		link: string;
+	}
+
+	const projects: project[] = [
+		{
+			title: 'Find My Anime',
+			description:
+				'Anime recommendation web-app that suggests animes based on your already fave animes',
+			link: '',
+			repo: '',
+			images: ['./projects/find-my-anime/1.png'],
+			technologies: ['React', 'Firebase', 'Daisy UI'],
+			contributors: []
+		},
+		{
+			title: 'Fingerprint Attendance System',
+			description: 'Fingerprint based attendance system that generates Daily Time Record',
+			link: '',
+			repo: '',
+			images: ['./projects/attendance-system/1.png'],
+			technologies: ['Java', 'JavaFX', 'MySQL', 'Digital Persona API'],
+			contributors: [
+				{
+					alias: '@henrytorlao',
+					name: 'Henry Torlao Jr.',
+					link: 'https://github.com/GrinHornet'
+				}
+			]
+		},
+		{
+			title: 'My Portfolio',
+			description: 'The personal portfolio website that you are currently on',
+			link: '',
+			repo: '',
+			images: [],
+			technologies: ['SvelteKit', 'shadcn-svelte'],
+			contributors: []
+		}
+	];
 </script>
 
 <div class="flex flex-col justify-center gap-4 p-4">
@@ -31,40 +85,40 @@
 		<Separator class="flex-auto" />
 	</div>
 
+	<!-- PROJECT SECTION -->
+	<!-- PROJECT SECTION -->
+	<!-- PROJECT SECTION -->
 	<div class="flex flex-wrap gap-4">
-		<Card.Root>
-			<Card.Header>
-				<Card.Title>Find My Anime</Card.Title>
-				<Card.Description
-					>Anime recommendation web-app that suggests animes based on your already fave animes</Card.Description
-				>
-			</Card.Header>
-			<Card.Footer class=" flex flex-wrap gap-2">
-				<p class="text-xs font-bold">TECHNOLOGIES USED</p>
-				<div class="">
-					<Badge variant="outline">React</Badge>
-					<Badge variant="outline">Firebase</Badge>
-					<Badge variant="outline">Daisy UI</Badge>
-				</div>
-			</Card.Footer>
-		</Card.Root>
-
-		<Card.Root>
-			<Card.Header>
-				<Card.Title>Fingerprint Attendance System</Card.Title>
-				<Card.Description
-					>Fingerprint based attendance system that generates Daily Time Record</Card.Description
-				>
-			</Card.Header>
-			<Card.Footer class=" flex flex-wrap gap-2">
-				<p class="text-xs font-bold">TECHNOLOGIES USED</p>
+		<!-- RENDER EACH PROJECT -->
+		{#each projects as project}
+			<Card.Root class="flex-auto bg-contain bg-cover">
 				<div>
-					<Badge variant="outline">Java</Badge>
-					<Badge variant="outline">JavaFX</Badge>
-					<Badge variant="outline">MySQL</Badge>
-					<Badge variant="outline">Digital Persona API</Badge>
+					<img src={project.images[0]} alt="" class="rounded" />
 				</div>
-			</Card.Footer>
-		</Card.Root>
+				<Card.Header>
+					<!-- RENDER TITLE -->
+					<Card.Title>{project.title}</Card.Title>
+					<!-- RENDER DESCRIPTION -->
+					<Card.Description class="text-pretty">{project.description}</Card.Description>
+				</Card.Header>
+				<Card.Footer class=" flex flex-wrap gap-2">
+					<div>
+						<!-- RENDER TECHNOLOGIES -->
+						{#each project.technologies as technology}
+							<Badge variant="outline">{technology}</Badge>
+						{/each}
+					</div>
+					<!-- RENDER CONTRIBUTORS -->
+					{#if project.contributors.length > 0}
+						<div>
+							<p class="text-xs font-bold">OTHER CONTRIBUTORS</p>
+							{#each project.contributors as contributor}
+								<a href={contributor.link} target="_blank"> <p>{contributor.alias}</p></a>
+							{/each}
+						</div>
+					{/if}
+				</Card.Footer>
+			</Card.Root>
+		{/each}
 	</div>
 </div>
