@@ -23,12 +23,12 @@
 				</div> -->
 				<Card.Header>
 					<!-- RENDER TITLE -->
-					<Card.Title>{project.title}</Card.Title>
+					<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title>
 					<!-- RENDER DESCRIPTION -->
 					<Card.Description class="text-pretty">{project.description}</Card.Description>
 				</Card.Header>
-				<Card.Footer class=" flex flex-wrap gap-2">
-					<div>
+				<Card.Footer class=" flex flex-col items-start gap-2">
+					<div class="flex flex-wrap gap-1">
 						<!-- RENDER TECHNOLOGIES -->
 						{#each project.technologies as technology}
 							<Badge variant="outline">{technology}</Badge>
@@ -36,10 +36,15 @@
 					</div>
 					<!-- RENDER CONTRIBUTORS -->
 					{#if project.contributors.length > 0}
-						<div>
-							<p class="text-xs font-bold">OTHER CONTRIBUTORS</p>
+						<Separator class="my-2" />
+						<div class="flex items-center gap-4">
+							<p class="text-xs font-light">OTHER CONTRIBUTORS:</p>
 							{#each project.contributors as contributor}
-								<a href={contributor.link} target="_blank"> <p>{contributor.alias}</p></a>
+								<a href={contributor.link} target="_blank">
+									<p class="rounded p-1 text-sm outline outline-1 outline-secondary">
+										{contributor.alias}
+									</p></a
+								>
 							{/each}
 						</div>
 					{/if}
