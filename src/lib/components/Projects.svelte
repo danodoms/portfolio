@@ -9,15 +9,20 @@
 	import * as Tooltip from '$lib/components/ui/tooltip';
 
 	export let projects: project[];
+	export let showTitle: boolean;
+	export let title: string;
 </script>
 
-<div class=" flex h-dvh flex-col justify-center gap-4 pt-20">
-	<div class="flex flex-initial items-center">
-		<h1 class="pr-4 text-3xl font-bold md:text-6xl">PROJECTS</h1>
-		<Separator class="flex-auto" />
-	</div>
+<!-- add h-dvh pt-20 to restore to original sizing -->
+<div class=" flex flex-col justify-center gap-4">
+	{#if showTitle}
+		<div class="flex flex-initial items-center">
+			<h1 class="pr-4 text-3xl font-bold md:text-6xl">{title}</h1>
+			<Separator class="flex-auto" />
+		</div>
+	{/if}
 
-	<div class="flex flex-wrap gap-4">
+	<div class="flex flex-wrap gap-2">
 		<!-- RENDER EACH PROJECT -->
 		{#each projects as project}
 			<Card.Root class="flex-auto bg-cover">

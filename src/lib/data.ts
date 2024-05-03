@@ -54,3 +54,30 @@ export const projects: project[] = [
 		contributors: []
 	}
 ];
+
+export const practiceProjects: project[] = [
+	{
+		title: 'Timesync',
+		description: 'Timetable mobile app that has sync features',
+		link: 'https://find-my-anime.web.app/',
+		longDescription: ['This is a PWA, which means it can be installed', ''],
+		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
+		slug: 'find-my-anime',
+		repo: 'https://github.com/danodoms/find-my-anime',
+		images: ['../projects/find-my-anime/1.png'],
+		technologies: ['React', 'Firebase', 'Daisy UI'],
+		contributors: []
+	},
+	{
+		title: 'Sound Up',
+		description: 'Displays chart of most streamed artists globally',
+		link: 'https://find-my-anime.web.app/',
+		longDescription: ['This is a PWA, which means it can be installed', ''],
+		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
+		slug: 'find-my-anime',
+		repo: 'https://github.com/danodoms/find-my-anime',
+		images: ['../projects/find-my-anime/1.png'],
+		technologies: ['React', 'Firebase', 'Daisy UI'],
+		contributors: []
+	}
+];
