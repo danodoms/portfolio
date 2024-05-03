@@ -5,11 +5,11 @@ export const projects: project[] = [
 		title: 'Find My Anime',
 		description:
 			'Anime recommendation web-app that suggests animes based on your already fave animes',
-		link: '',
+		link: 'https://find-my-anime.web.app/',
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
 		slug: 'find-my-anime',
-		repo: '',
+		repo: 'https://github.com/danodoms/find-my-anime',
 		images: ['../projects/find-my-anime/1.png'],
 		technologies: ['React', 'Firebase', 'Daisy UI'],
 		contributors: []
@@ -30,7 +30,7 @@ export const projects: project[] = [
 		],
 		slug: 'fingerprint-attendance-system',
 		link: '',
-		repo: '',
+		repo: 'https://github.com/danodoms/fingerprint-attendance-system',
 		images: ['../projects/attendance-system/1.png'],
 		technologies: ['Java', 'JavaFX', 'MySQL', 'Digital Persona API'],
 		contributors: [
@@ -48,7 +48,7 @@ export const projects: project[] = [
 		longDescription: [''],
 		features: [],
 		slug: 'my-portfolio',
-		repo: '',
+		repo: 'https://github.com/danodoms/portfolio',
 		images: [],
 		technologies: ['SvelteKit', 'shadcn-svelte'],
 		contributors: []

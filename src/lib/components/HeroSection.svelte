@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { TypewriterEffectSmooth, TypewriterEffect } from '$lib/components/ui/TypewriterEffect';
+	import { CardContainer, CardBody, CardItem } from '$lib/components/ui/ThreeDCardEffect';
+	import { TextGenerateEffect } from '$lib/components/ui/TextGenerateEffect';
 	import { text } from '@sveltejs/kit';
 
 	const heading = [
@@ -14,35 +16,38 @@
 		}
 	];
 
-	import { CardContainer, CardBody, CardItem } from '$lib/components/ui/ThreeDCardEffect';
+	const subText = 'plan. design. create.';
+	const shortBio = `"I like creating functional and
+well-designed applications, dabbling with design, functionality, and databases."`;
 
 	let isMouseEntered = false;
 </script>
 
-<!-- <DotBackground> -->
 <div class="flex h-dvh flex-col content-center items-center justify-center gap-4 md:items-start">
-	<div class="items-left mb-4 flex flex-col justify-center">
-		<!-- <TypewriterEffectSmooth words={heading} /> -->
-		<h1 class="text-5xl font-extrabold tracking-tight lg:text-8xl">HI IM DOM.</h1>
-		<h1 class="text-2xl font-semibold tracking-tight lg:text-2xl">plan. design. create.</h1>
+	<div class="items-left mb-4 flex flex-col items-center justify-center md:items-start">
+		<h1
+			class="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent md:text-8xl"
+		>
+			danodoms.
+		</h1>
+		<!-- <h1 class="text-2xl font-bold tracking-tight lg:text-2xl">plan. design. create.</h1> -->
+		<TextGenerateEffect words={subText} className="m-0 text-2xl font-bold" />
 	</div>
 
-	<!-- <div
-		class="flex flex-auto items-center rounded p-4 outline outline-1 outline-secondary backdrop-blur-sm"
-	> -->
 	<CardContainer bind:isMouseEntered className="inter-var flex flex-auto">
 		<CardBody
-			className="flex-auto flex flex-wrap outline outline-1 outline-secondary p-4 rounded dark:hover:shadow-primary/[0.1] dark:hover:shadow-2xl items-center justify-center"
+			className="flex-auto bg-card flex flex-wrap outline outline-1 outline-secondary p-4 rounded dark:hover:shadow-primary/[0.1] dark:hover:shadow-2xl items-center justify-center md:px-10"
 		>
 			<CardItem
 				{isMouseEntered}
 				translateZ="50"
 				className="flex-initial md:flex-1 text-center md:text-left"
 			>
-				<p class="flex-auto text-pretty font-normal md:text-xl">
+				<!-- <p class="flex-auto text-pretty font-normal md:text-xl">
 					"I particularly don't know how I'd describe myself, but I like creating functional and
 					well-designed applications, dabbling with design, functionality, and databases"
-				</p>
+				</p> -->
+				<TextGenerateEffect words={shortBio} className="m-0 md:text-xl font-normal italic" />
 			</CardItem>
 			<CardItem {isMouseEntered} translateZ="100" className="flex-initial md:flex-4">
 				<img
@@ -53,6 +58,4 @@
 			</CardItem>
 		</CardBody>
 	</CardContainer>
-	<!-- </div> -->
 </div>
-<!-- </DotBackground> -->

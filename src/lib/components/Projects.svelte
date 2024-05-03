@@ -4,6 +4,9 @@
 	import Separator from '@/components/ui/separator/separator.svelte';
 	import { Badge } from '$lib/components/ui/badge';
 	import * as HoverCard from '$lib/components/ui/hover-card';
+	import { Button } from '$lib/components/ui/MovingBorder';
+	import { SquareArrowOutUpRight, Github } from 'lucide-svelte';
+	import * as Tooltip from '$lib/components/ui/tooltip';
 
 	export let projects: project[];
 </script>
@@ -23,7 +26,39 @@
 				</div> -->
 				<Card.Header>
 					<!-- RENDER TITLE -->
-					<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title>
+					<div class="flex flex-wrap justify-between gap-2">
+						<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title>
+
+						<div class="flex gap-4">
+							<!-- RENDER VIEW SOURCE CODE -->
+							{#if project.repo}
+								<Tooltip.Root>
+									<Tooltip.Trigger
+										><a href={project.repo} target="_blank"
+											><Github size={16} class="ICON-HOVER " /></a
+										></Tooltip.Trigger
+									>
+									<Tooltip.Content>
+										<p>View Source Code</p>
+									</Tooltip.Content>
+								</Tooltip.Root>
+							{/if}
+							<!-- RENDER SHOW DEMO -->
+							{#if project.link}
+								<Tooltip.Root>
+									<Tooltip.Trigger
+										><a href={project.link} target="_blank"
+											><SquareArrowOutUpRight size={16} class="" /></a
+										></Tooltip.Trigger
+									>
+									<Tooltip.Content>
+										<p>Show Demo</p>
+									</Tooltip.Content>
+								</Tooltip.Root>
+							{/if}
+						</div>
+					</div>
+
 					<!-- RENDER DESCRIPTION -->
 					<Card.Description class="text-pretty">{project.description}</Card.Description>
 				</Card.Header>
@@ -53,3 +88,9 @@
 		{/each}
 	</div>
 </div>
+
+<style>
+	.ICON-HOVER:hover {
+		@apply outline outline-1 outline-secondary hover:size-20;
+	}
+</style>
