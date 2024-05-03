@@ -8,7 +8,7 @@
 </script>
 
 <nav
-	class="backdrop fixed top-0 flex w-full flex-auto gap-4 border-b p-2 backdrop-blur-lg md:px-40"
+	class="backdrop fixed top-0 z-20 flex w-full flex-auto gap-4 border-b p-2 backdrop-blur-lg md:px-40"
 >
 	<div class="LEFT-SIDE my-auto flex-auto">
 		<p class="p-2 font-bold">dom.dev</p>

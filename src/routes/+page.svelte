@@ -7,6 +7,7 @@
 	import Projects from '@/components/Projects.svelte';
 	import Technologies from '@/components/Technologies.svelte';
 	import { projects } from '$lib/data';
+	import { DotBackground } from '$lib/components/ui/GridAndDotBackground';
 </script>
 
 <div class="flex flex-col justify-center gap-4 p-4">

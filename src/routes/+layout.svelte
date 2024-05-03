@@ -2,11 +2,14 @@
 	import '../app.pcss';
 	import Header from '@/components/Header.svelte';
 	import { ModeWatcher } from 'mode-watcher';
+	import { DotBackground } from '$lib/components/ui/GridAndDotBackground';
 </script>
 
 <Header />
 <ModeWatcher />
 
-<section class="md:px-40">
-	<slot></slot>
-</section>
+<DotBackground>
+	<section class="md:px-40">
+		<slot></slot>
+	</section>
+</DotBackground>

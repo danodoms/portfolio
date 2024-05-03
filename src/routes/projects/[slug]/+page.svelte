@@ -21,7 +21,18 @@
 		<Carousel.Next /> -->
 	</Carousel.Root>
 
-	<div class="flex-auto flex-col gap-4">
+	<div class="flex flex-auto flex-wrap items-center gap-2">
+		<p class="flex-initial text-sm">FEATURES</p>
+		{#each data.features as feature}
+			<div class="flex-initial">
+				<p class="rounded-full px-3 py-2 text-sm font-semibold outline outline-1 outline-secondary">
+					{feature}
+				</p>
+			</div>
+		{/each}
+	</div>
+
+	<div class="flex flex-auto flex-col gap-4">
 		{#each data.longDescription as description}
 			<div class="flex-auto">
 				<p>{description}</p>
