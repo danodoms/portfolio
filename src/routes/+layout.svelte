@@ -8,8 +8,8 @@
 <Header />
 <ModeWatcher />
 
-<DotBackground>
-	<section class="md:px-40">
-		<slot></slot>
-	</section>
-</DotBackground>
+<!-- <DotBackground> -->
+<section class="md:px-40">
+	<slot></slot>
+</section>
+<!-- </DotBackground> -->

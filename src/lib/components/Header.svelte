@@ -35,36 +35,33 @@
 </script>
 
 <nav
-	class="backdrop fixed top-0 z-20 flex w-full flex-auto gap-4 border-b p-2 backdrop-blur-lg md:px-40"
+	class="fixed top-0 z-20 flex w-full flex-auto gap-4 outline outline-1 outline-secondary backdrop-blur-md md:px-40"
 >
 	<div class="LEFT-SIDE my-auto flex-auto">
-		<p class="p-2 font-bold">dom.dev</p>
+		<p class="p-2 font-extrabold">danodoms.</p>
 	</div>
 
-	<div class="RIGHT-SIDE relative ml-auto flex flex-initial items-center gap-4">
-		<div class="hidden gap-8 lg:flex">
-			<a href="/" class=" flex items-center justify-around gap-2 text-sm font-bold">
+	<div class="RIGHT-SIDE relative ml-auto flex flex-initial items-center">
+		<div class="hidden lg:flex">
+			<a href="/" class="NAV-BTN">
 				<Home size={18} />
 				<p>Home</p>
 			</a>
-			<a href="/about" class="flex items-center gap-2 text-sm font-bold">
+			<a href="/about" class="NAV-BTN">
 				<Info size={18} />
 				<p>About</p>
 			</a>
-			<a href="/projects" class="flex items-center gap-2 text-sm font-bold"
-				><Code size={18} />
+			<a href="/projects" class="NAV-BTN">
+				<Code size={18} />
 				<p>Projects</p>
 			</a>
-			<a href="/services" class="flex items-center gap-2 text-sm font-bold">
+			<a href="/services" class="NAV-BTN">
 				<Briefcase size={18} />
 				<p>Services</p>
 			</a>
 		</div>
 
-		<div
-			class="flex cursor-pointer gap-4 rounded p-2 outline outline-1 outline-secondary lg:hidden"
-			on:click={handleShowNav}
-		>
+		<div class="flex cursor-pointer rounded lg:hidden" on:click={handleShowNav}>
 			<Menu class="icon" />
 		</div>
 
@@ -99,7 +96,7 @@
 			</div>
 		{/if}
 
-		<Button on:click={toggleMode} variant="outline" size="icon">
+		<Button on:click={toggleMode} variant="ghost" size="icon">
 			<Sun
 				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
 			/>
@@ -110,3 +107,9 @@
 		</Button>
 	</div>
 </nav>
+
+<style>
+	.NAV-BTN {
+		@apply flex items-center gap-3 p-4 text-xs font-semibold uppercase outline outline-1 outline-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary;
+	}
+</style>
