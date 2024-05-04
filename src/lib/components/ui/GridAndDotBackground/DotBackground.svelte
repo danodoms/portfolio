@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="relative flex items-center justify-center bg-white bg-dot-black/[0.2] dark:bg-black dark:bg-dot-white/[0.2]"
+	class="relative flex items-center justify-center bg-white bg-dot-black/[0.2] dark:bg-black dark:bg-dot-white/[0.13]"
 >
 	<!-- Radial gradient for the container to give a faded look -->
 	{#if showFade}

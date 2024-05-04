@@ -23,11 +23,11 @@
 	let showPracticeProjects = false;
 </script>
 
-<div class="flex flex-col justify-center gap-4 p-4">
+<div class="flex flex-col justify-center gap-4">
 	<HeroSection />
 	<About />
 
-	<div class="flex flex-initial flex-col content-center gap-2">
+	<div class="flex flex-initial flex-col content-center gap-2 p-4">
 		<h1 class="flex-1 pr-4 text-3xl font-bold md:text-6xl">PROJECTS</h1>
 		<!-- <Separator class="flex-2" /> -->
 

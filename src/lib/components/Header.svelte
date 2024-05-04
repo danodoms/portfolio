@@ -35,10 +35,12 @@
 </script>
 
 <nav
-	class="fixed top-0 z-20 flex w-full flex-auto gap-4 outline outline-1 outline-secondary backdrop-blur-md md:px-40"
+	class="fixed top-0 z-20 flex w-full flex-auto gap-4 outline-1 outline-secondary backdrop-blur-md md:px-40"
 >
 	<div class="LEFT-SIDE my-auto flex-auto">
-		<p class="p-2 font-extrabold">danodoms.</p>
+		<a href="/" class="cursor-pointer">
+			<p class="p-3 text-xl font-extrabold">danodoms.</p>
+		</a>
 	</div>
 
 	<div class="RIGHT-SIDE relative ml-auto flex flex-initial items-center">
@@ -59,9 +61,22 @@
 				<Briefcase size={18} />
 				<p>Services</p>
 			</a>
+
+			<div class="NAV-BTN cursor-pointer" on:click={toggleMode}>
+				<Sun
+					class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+				/>
+				<Moon
+					class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+				/>
+				<span class="sr-only">Toggle theme</span>
+			</div>
+			<!-- <Button on:click={toggleMode} variant="ghost" size="icon">
+				
+			</Button> -->
 		</div>
 
-		<div class="flex cursor-pointer rounded lg:hidden" on:click={handleShowNav}>
+		<div class="flex cursor-pointer rounded p-2 lg:hidden" on:click={handleShowNav}>
 			<Menu class="icon" />
 		</div>
 
@@ -95,21 +110,11 @@
 				</a>
 			</div>
 		{/if}
-
-		<Button on:click={toggleMode} variant="ghost" size="icon">
-			<Sun
-				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-			/>
-			<Moon
-				class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-			/>
-			<span class="sr-only">Toggle theme</span>
-		</Button>
 	</div>
 </nav>
 
 <style>
 	.NAV-BTN {
-		@apply flex items-center gap-3 p-4 text-xs font-semibold uppercase outline outline-1 outline-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary;
+		@apply flex items-center gap-3 p-4 text-xs font-semibold uppercase outline-1 outline-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary;
 	}
 </style>

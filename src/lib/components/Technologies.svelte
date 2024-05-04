@@ -23,7 +23,7 @@
 	];
 </script>
 
-<div class=" flex h-dvh flex-col justify-center gap-4 pt-20">
+<div class=" flex h-dvh flex-col justify-center gap-4 p-4 pt-20">
 	<div class="flex flex-initial items-center">
 		<h1 class="text-nowrap pr-4 text-2xl font-bold md:text-6xl">TECHNOLOGIES USED</h1>
 		<Separator class="flex-auto" />

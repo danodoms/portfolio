@@ -23,7 +23,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 	let isMouseEntered = false;
 </script>
 
-<div class="flex h-dvh flex-wrap items-center justify-between gap-4">
+<div class="flex h-dvh flex-wrap items-center justify-between gap-4 p-4">
 	<h1 class="text-6xl font-extrabold tracking-normal md:text-8xl">ABOUT</h1>
 	<div class="flex flex-auto flex-col gap-4 p-4">
 		<p class="text-justify indent-10 text-lg font-bold">

@@ -9,7 +9,8 @@
 <ModeWatcher />
 
 <!-- <DotBackground> -->
-<section class="md:px-40">
+<!-- <section class="md:px-40"> -->
+<section class="">
 	<slot></slot>
 </section>
 <!-- </DotBackground> -->
