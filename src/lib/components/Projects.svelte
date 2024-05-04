@@ -67,13 +67,17 @@
 					<!-- RENDER DESCRIPTION -->
 					<Card.Description class="text-pretty">{project.description}</Card.Description>
 				</Card.Header>
+
 				<Card.Footer class=" flex flex-col items-start gap-2">
 					<div class="flex flex-wrap gap-1">
 						<!-- RENDER TECHNOLOGIES -->
-						{#each project.technologies as technology}
-							<Badge variant="outline">{technology}</Badge>
-						{/each}
+						{#if project.technologies.length > 0}
+							{#each project.technologies as technology}
+								<Badge variant="outline">{technology}</Badge>
+							{/each}
+						{/if}
 					</div>
+
 					<!-- RENDER CONTRIBUTORS -->
 					{#if project.contributors.length > 0}
 						<Separator class="my-2" />

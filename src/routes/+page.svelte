@@ -14,6 +14,7 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { Pin, FlaskConical } from 'lucide-svelte';
+	import About from '@/components/About.svelte';
 
 	function togglePracticeProjects() {
 		showPracticeProjects = !showPracticeProjects;
@@ -24,6 +25,7 @@
 
 <div class="flex flex-col justify-center gap-4 p-4">
 	<HeroSection />
+	<About />
 
 	<div class="flex flex-initial flex-col content-center gap-2">
 		<h1 class="flex-1 pr-4 text-3xl font-bold md:text-6xl">PROJECTS</h1>
@@ -33,20 +35,20 @@
 			<Switch id="airplane-mode" on:click={togglePracticeProjects} />
 			<Label for="airplane-mode" class="font-bold">Show Practice Projects</Label>
 		</div> -->
-		<Tabs.Root value="account" class="flex-auto">
+		<Tabs.Root value="pinned" class="flex-auto">
 			<Tabs.List class="grid w-full grid-cols-2">
-				<Tabs.Trigger value="account">
+				<Tabs.Trigger value="pinned">
 					<Pin size={14} class="mr-1" />Pinned</Tabs.Trigger
 				>
-				<Tabs.Trigger value="password">
-					<FlaskConical size={14} class="mr-1" />Practice Projects</Tabs.Trigger
+				<Tabs.Trigger value="practice">
+					<FlaskConical size={14} class="mr-1" />Practice</Tabs.Trigger
 				>
 			</Tabs.List>
-			<Tabs.Content value="account" class="flex-auto">
+			<Tabs.Content value="pinned" class="flex-auto">
 				<Projects showTitle={false} title={'PROJECTS'} {projects} />
 			</Tabs.Content>
 
-			<Tabs.Content value="password" class="flex-auto">
+			<Tabs.Content value="practice" class="flex-auto">
 				<Projects showTitle={false} title={'PROJECTS'} projects={practiceProjects} />
 			</Tabs.Content>
 		</Tabs.Root>

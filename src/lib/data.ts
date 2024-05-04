@@ -59,25 +59,50 @@ export const practiceProjects: project[] = [
 	{
 		title: 'Timesync',
 		description: 'Timetable mobile app that has sync features',
-		link: 'https://find-my-anime.web.app/',
+		link: '',
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
-		slug: 'find-my-anime',
-		repo: 'https://github.com/danodoms/find-my-anime',
+		slug: 'timesync',
+		repo: 'https://github.com/danodoms/time-sync-react-native',
 		images: ['../projects/find-my-anime/1.png'],
-		technologies: ['React', 'Firebase', 'Daisy UI'],
+		technologies: ['React Native', 'Laravel', 'WatermelonDB', 'shadcn'],
 		contributors: []
 	},
 	{
 		title: 'Sound Up',
 		description: 'Displays chart of most streamed artists globally',
-		link: 'https://find-my-anime.web.app/',
+		link: '',
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
 		slug: 'find-my-anime',
-		repo: 'https://github.com/danodoms/find-my-anime',
+		repo: 'https://github.com/danodoms/sound-up',
 		images: ['../projects/find-my-anime/1.png'],
-		technologies: ['React', 'Firebase', 'Daisy UI'],
+		technologies: ['HTML', 'CSS', 'Javascript', 'Last.fm API'],
+		contributors: []
+	},
+	{
+		title: 'Blu POS',
+		description: 'Point of sale system with login features',
+		link: '',
+		longDescription: ['This is a PWA, which means it can be installed', ''],
+		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
+		slug: 'find-my-anime',
+		repo: 'https://github.com/danodoms/Point-of-Sale-System',
+		images: ['../projects/find-my-anime/1.png'],
+		technologies: ['Java'],
+		contributors: []
+	},
+	{
+		title: 'Employee CRUD',
+		description:
+			'A basic CRUD feature extension for interacting with the existing database from Fingerprint Attendance System, mainly for testing Laravel',
+		link: '',
+		longDescription: ['This is a PWA, which means it can be installed', ''],
+		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
+		slug: 'find-my-anime',
+		repo: 'https://github.com/danodoms/employee-crud',
+		images: ['../projects/find-my-anime/1.png'],
+		technologies: ['Laravel', 'MySQL'],
 		contributors: []
 	}
 ];
