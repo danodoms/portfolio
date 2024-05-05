@@ -32,8 +32,10 @@ well-designed applications, dabbling with design, functionality, and databases."
 	<div class="flex h-dvh flex-col content-center items-center justify-center gap-2 p-4">
 		<div class="items-left mb-4 flex flex-col items-center justify-center">
 			<GradientAnimation
-				size="25%"
-				containerClassName="mb-4 size-auto p-4 rounded-full bg-clip-text text-6xl md:text-8xl font-extrabold tracking-tight"
+				interactive={false}
+				blendingValue="screen"
+				size="100%"
+				containerClassName="mb-4 size-auto p-4 rounded-full bg-clip-text text-6xl md:text-8xl font-extrabold tracking-tight outline outline-1 outline-secondary saturate-50"
 			>
 				<h1 class="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">
 					danodoms.
@@ -44,7 +46,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 			<div class="flex gap-2">
 				<TextGenerateEffect words={subText} className="m-0 text-2xl font-bold" />
 				<div
-					class="  text-invisible flex content-center items-center gap-2 rounded-full bg-primary bg-clip-text px-4 font-extrabold tracking-wide outline outline-1"
+					class="  text-invisible flex content-center items-center gap-2 rounded-full bg-primary bg-clip-text px-4 font-extrabold tracking-wide outline outline-1 outline-secondary"
 				>
 					<!-- <Copyright /> -->
 					2024
@@ -73,12 +75,27 @@ well-designed applications, dabbling with design, functionality, and databases."
 			</CardBody>
 		</CardContainer> -->
 
-		<p class="justify-center text-pretty text-center font-thin md:w-1/2 lg:text-3xl">
-			I like creating functional and well-designed applications, dabbling with design,
-			functionality, and databases.
-		</p>
-		<Button variant="outline" class="mt-4 flex gap-2 text-xl font-semibold"
-			>Get in touch<MoveRight /></Button
-		>
+		<div class="relative flex flex-wrap content-center items-center justify-center gap-4">
+			<div class="flex">
+				<img
+					class="absolute right-0 m-2 size-20 rounded-full p-1 outline outline-1 outline-secondary grayscale md:relative md:size-32"
+					src="https://avatars.githubusercontent.com/u/116992939?v=4"
+					alt=""
+				/>
+			</div>
+
+			<div class="flex flex-col">
+				<p class="justify-center text-wrap font-thin lg:text-3xl">
+					I like creating functional and well-designed applications,<br /> dabbling with design, functionality,
+					and databases.
+				</p>
+
+				<div class="mt-4 flex-initial">
+					<Button variant="outline" class="gap-2 text-xl font-semibold">
+						Get in touch<MoveRight />
+					</Button>
+				</div>
+			</div>
+		</div>
 	</div>
 </DotBackground>

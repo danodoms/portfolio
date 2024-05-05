@@ -8,6 +8,7 @@
 	import { onMount } from 'svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import { GradientAnimation } from '$lib/components/ui/GradientAnimation';
 
 	let showNav = false;
 
@@ -35,7 +36,7 @@
 </script>
 
 <nav
-	class="fixed top-0 z-20 flex w-full flex-auto gap-4 outline-1 outline-secondary backdrop-blur-md md:px-40"
+	class="fixed top-0 z-20 flex w-full flex-auto gap-4 outline-1 outline-secondary backdrop-blur md:px-40"
 >
 	<div class="LEFT-SIDE my-auto flex-auto">
 		<a href="/" class="cursor-pointer">
