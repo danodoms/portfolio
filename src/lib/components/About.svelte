@@ -36,7 +36,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 		</p>
 
 		<p class="text-justify indent-10 text-lg tracking-wide">
-			Currently, I'm in my 3rd year of college taking up my Bachelor's in Information Technology
+			Currently, I'm in my 3rd year of college taking up my Bachelor's in Information Technology.
 		</p>
 	</div>
 </div>
