@@ -3,7 +3,8 @@
 	import { CardContainer, CardBody, CardItem } from '$lib/components/ui/ThreeDCardEffect';
 	import { TextGenerateEffect } from '$lib/components/ui/TextGenerateEffect';
 	import { text } from '@sveltejs/kit';
-
+	import { animate } from 'motion';
+	import { onMount } from 'svelte';
 	const heading = [
 		{
 			text: 'HI'
@@ -21,25 +22,21 @@
 well-designed applications, dabbling with design, functionality, and databases."`;
 
 	let isMouseEntered = false;
+
+	onMount(() => {
+		// animate('.HEADING', { x: '200px' }, { duration: 1 });
+	});
 </script>
 
 <div class="flex h-dvh flex-wrap items-center justify-between gap-4 p-4">
-	<h1 class="text-6xl font-extrabold tracking-normal md:text-8xl">ABOUT</h1>
+	<h1 class="HEADING text-6xl font-extrabold tracking-normal md:text-8xl">ABOUT</h1>
 	<div class="flex flex-auto flex-col gap-4 p-4">
-		<p class="text-justify indent-10 text-lg font-bold">
-			"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-			and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-			cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those
-			who fail in their duty through weakness of will, which is the same as saying through shrinking
-			from toil and pain.
+		<p class="text-justify indent-10 text-lg tracking-wide">
+			I am a web developer, I find learning about web technologies fun, challenging and rewarding.
 		</p>
 
-		<p class="text-lg font-bold">
-			"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-			and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-			cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those
-			who fail in their duty through weakness of will, which is the same as saying through shrinking
-			from toil and pain.
+		<p class="text-justify indent-10 text-lg tracking-wide">
+			Currently, I'm in my 3rd year of college taking up my Bachelor's in Information Technology
 		</p>
 	</div>
 </div>

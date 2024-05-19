@@ -5,6 +5,7 @@
 	"scripts": {
 		"dev": "vite dev --host",
 		"build": "vite build",
+		"deploy": "npm run build && npx vercel deploy --prod",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -41,6 +42,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/dm-sans": "^5.0.6",
+		"@fontsource-variable/unbounded": "^5.0.20",
+		"@fontsource/luckiest-guy": "^5.0.19",
 		"@sveltejs/adapter-vercel": "^5.3.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"bits-ui": "^0.21.7",
@@ -50,6 +54,7 @@
 		"lucide-svelte": "^0.376.1",
 		"mini-svg-data-uri": "^1.4.4",
 		"mode-watcher": "^0.3.0",
+		"motion": "^10.17.0",
 		"svelte-inview": "^4.0.2",
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^2.3.0",
