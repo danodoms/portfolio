@@ -138,7 +138,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 		<div class="flex">
 			<img
 				class="absolute right-0 m-2 size-20 rounded-full p-1 outline outline-1 outline-secondary grayscale md:relative md:size-32"
-				src="https://avatars.githubusercontent.com/u/116992939?v=4"
+				src="https://avatars.githubusercontent.com/u/165539900?v=4"
 				alt=""
 			/>
 		</div>
