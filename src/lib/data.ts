@@ -9,9 +9,22 @@ export const projects: project[] = [
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
 		slug: 'find-my-anime',
-		repo: 'https://github.com/danodoms/find-my-anime',
+		repo: 'https://github.com/domsdano/find-my-anime',
 		images: ['../projects/find-my-anime/1.png'],
 		technologies: ['React', 'Firebase', 'Daisy UI'],
+		contributors: []
+	},
+
+	{
+		title: 'University Library',
+		description: 'A static Library website',
+		link: 'https://dorsu-library.vercel.app/',
+		longDescription: ['This is a PWA, which means it can be installed', ''],
+		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
+		slug: 'find-my-anime',
+		repo: 'https://github.com/domsdano/dorsu-library',
+		images: ['../projects/dorsu-library/1.png'],
+		technologies: ['Svelte', 'SvelteKit', 'Daisy UI'],
 		contributors: []
 	},
 	{
@@ -30,7 +43,7 @@ export const projects: project[] = [
 		],
 		slug: 'fingerprint-attendance-system',
 		link: '',
-		repo: 'https://github.com/danodoms/fingerprint-attendance-system',
+		repo: 'https://github.com/domsdano/fingerprint-attendance',
 		images: ['../projects/attendance-system/1.png'],
 		technologies: ['Java', 'JavaFX', 'MySQL', 'Digital Persona API'],
 		contributors: [
@@ -48,7 +61,7 @@ export const projects: project[] = [
 		longDescription: [''],
 		features: [],
 		slug: 'my-portfolio',
-		repo: 'https://github.com/danodoms/portfolio',
+		repo: 'https://github.com/domsdano/portfolio',
 		images: [],
 		technologies: ['SvelteKit', 'shadcn-svelte'],
 		contributors: []
@@ -63,8 +76,8 @@ export const practiceProjects: project[] = [
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
 		slug: 'timesync',
-		repo: 'https://github.com/danodoms/time-sync-react-native',
-		images: ['../projects/find-my-anime/1.png'],
+		repo: 'https://github.com/domsdano/time-sync-react-native',
+		images: [],
 		technologies: ['React Native', 'Laravel', 'WatermelonDB', 'shadcn'],
 		contributors: []
 	},
@@ -75,8 +88,8 @@ export const practiceProjects: project[] = [
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
 		slug: 'find-my-anime',
-		repo: 'https://github.com/danodoms/sound-up',
-		images: ['../projects/find-my-anime/1.png'],
+		repo: 'https://github.com/domsdano/sound-up',
+		images: [],
 		technologies: ['HTML', 'CSS', 'Javascript', 'Last.fm API'],
 		contributors: []
 	},
@@ -87,8 +100,8 @@ export const practiceProjects: project[] = [
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
 		slug: 'find-my-anime',
-		repo: 'https://github.com/danodoms/Point-of-Sale-System',
-		images: ['../projects/find-my-anime/1.png'],
+		repo: 'https://github.com/domsdano/Point-of-Sale-System',
+		images: [],
 		technologies: ['Java'],
 		contributors: []
 	},
@@ -100,8 +113,8 @@ export const practiceProjects: project[] = [
 		longDescription: ['This is a PWA, which means it can be installed', ''],
 		features: ['Anime Discovery', 'Data Persistence', 'Login Features'],
 		slug: 'find-my-anime',
-		repo: 'https://github.com/danodoms/employee-crud',
-		images: ['../projects/find-my-anime/1.png'],
+		repo: 'https://github.com/domsdano/employee-crud',
+		images: [],
 		technologies: ['Laravel', 'MySQL'],
 		contributors: []
 	}

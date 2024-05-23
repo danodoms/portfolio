@@ -78,7 +78,7 @@
 		}
 	];
 
-	const subText = 'plan. design. create.';
+	const subText = 'i develop things for the web.';
 	const shortBio = `"I like creating functional and
 well-designed applications, dabbling with design, functionality, and databases."`;
 
@@ -104,12 +104,11 @@ well-designed applications, dabbling with design, functionality, and databases."
 		<!-- <h1 class="text-2xl font-bold tracking-tight lg:text-2xl">plan. design. create.</h1> -->
 		<div class="flex gap-2">
 			<TextGenerateEffect words={subText} className="m-0 text-2xl font-bold" />
-			<div
+			<!-- <div
 				class="  text-invisible flex content-center items-center gap-2 rounded-full bg-primary bg-clip-text px-4 font-extrabold tracking-wide outline outline-1 outline-secondary"
 			>
-				<!-- <Copyright /> -->
 				2024
-			</div>
+			</div> -->
 		</div>
 	</div>
 
@@ -134,28 +133,26 @@ well-designed applications, dabbling with design, functionality, and databases."
 			</CardBody>
 		</CardContainer> -->
 
-	<div class="relative flex flex-wrap content-center items-center justify-center gap-4">
-		<div class="flex">
+	<div class="flex flex-wrap items-center justify-center gap-2">
+		<div class="flex-initial">
 			<img
-				class="absolute right-0 m-2 size-20 rounded-full p-1 outline outline-1 outline-secondary grayscale md:relative md:size-32"
+				class="right-0 m-2 size-20 rounded-full p-1 outline outline-1 outline-secondary grayscale md:relative md:size-32"
 				src="https://avatars.githubusercontent.com/u/165539900?v=4"
 				alt=""
 			/>
 		</div>
 
-		<div class="flex flex-col">
-			<p class="justify-center text-wrap font-thin lg:text-3xl">
-				I like creating functional and well-designed applications,<br /> dabbling with design, functionality,
-				and databases.
-			</p>
+		<p class="flex-1 text-balance font-thin lg:text-3xl">
+			I like creating functional and well-designed applications, dabbling with design,
+			functionality, and databases.
+		</p>
+	</div>
 
-			<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">
-				<!-- <AnimatedTooltip items={people} /> -->
-				<Button variant="outline" class="gap-2 text-xl font-semibold">
-					Get in touch<MoveRight />
-				</Button>
-			</div>
-		</div>
+	<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">
+		<!-- <AnimatedTooltip items={people} /> -->
+		<!-- <Button variant="outline" class="gap-2 text-xl font-semibold">
+			Get in touch<MoveRight />
+		</Button> -->
 	</div>
 </div>
 <!-- </DotBackground> -->

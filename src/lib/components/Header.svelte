@@ -35,9 +35,7 @@
 	});
 </script>
 
-<nav
-	class="fixed top-0 z-20 flex w-full flex-auto gap-4 outline-1 outline-secondary backdrop-blur md:px-40"
->
+<nav class="fixed top-0 z-20 flex w-full flex-auto gap-4 backdrop-blur-lg">
 	<div class="LEFT-SIDE my-auto flex-auto">
 		<a href="/" class="cursor-pointer">
 			<p class="p-3 text-xl font-extrabold">danodoms.</p>
@@ -83,7 +81,7 @@
 
 		{#if showNav}
 			<div
-				class="absolute right-0 top-14 flex flex-col items-start gap-4 rounded bg-card p-4 outline outline-1 outline-secondary"
+				class="absolute right-0 top-14 mr-2 flex flex-col items-start gap-4 rounded bg-card p-4 outline outline-1 outline-secondary"
 				transition:slide={{
 					delay: 250,
 					duration: 150,

@@ -28,9 +28,10 @@ well-designed applications, dabbling with design, functionality, and databases."
 	});
 </script>
 
-<div class="flex h-dvh flex-wrap items-center justify-between gap-4 p-4">
-	<h1 class="HEADING text-6xl font-extrabold tracking-normal md:text-8xl">ABOUT</h1>
-	<div class="flex flex-auto flex-col gap-4 p-4">
+<div class="flex h-dvh flex-col items-center justify-center gap-4 p-4 outline-1">
+	<h1 class="HEADING flex-initial text-6xl font-extrabold tracking-normal md:text-8xl">ABOUT</h1>
+
+	<div class="flex flex-initial flex-col gap-4 p-4">
 		<p class="text-justify indent-10 text-lg tracking-wide">
 			I am a web developer, I find learning about web technologies fun, challenging and rewarding.
 		</p>

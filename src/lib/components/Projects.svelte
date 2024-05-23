@@ -30,6 +30,10 @@
 					<img src={project.images[0]} alt="" class="rounded" />
 				</div> -->
 				<Card.Header>
+					<!-- RENDER IMAGE/S -->
+					<div class="mb-2">
+						<img class="rounded-md" src={project.images[0]} alt="" />
+					</div>
 					<!-- RENDER TITLE -->
 					<div class="flex flex-wrap justify-between gap-2">
 						<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title>

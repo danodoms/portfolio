@@ -15,6 +15,8 @@
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { Pin, FlaskConical } from 'lucide-svelte';
 	import About from '@/components/About.svelte';
+	import Footer from '@/components/Footer.svelte';
+	import Testimonials from '@/components/Testimonials.svelte';
 
 	function togglePracticeProjects() {
 		showPracticeProjects = !showPracticeProjects;
@@ -27,6 +29,7 @@
 	<HeroSection />
 	<About />
 
+	<!-- PROJECTS SECTION -->
 	<div class="flex flex-initial flex-col content-center gap-2 p-4">
 		<h1 class="flex-1 pr-4 text-3xl font-bold md:text-6xl">PROJECTS</h1>
 		<!-- <Separator class="flex-2" /> -->
@@ -54,5 +57,7 @@
 		</Tabs.Root>
 	</div>
 
+	<Testimonials />
 	<Technologies />
+	<Footer />
 </div>
