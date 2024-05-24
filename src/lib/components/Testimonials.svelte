@@ -129,7 +129,7 @@
 		<!-- <h2 class="rounded-full font-semibold">as seen on Fiverr</h2> -->
 	</div>
 
-	<div>
+	<div class="grid grid-cols-1">
 		<InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
 	</div>
 </section>

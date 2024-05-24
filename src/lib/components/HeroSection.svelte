@@ -3,7 +3,7 @@
 	import { CardContainer, CardBody, CardItem } from '$lib/components/ui/ThreeDCardEffect';
 	import { TextGenerateEffect } from '$lib/components/ui/TextGenerateEffect';
 	import { text } from '@sveltejs/kit';
-	import { Copyright, ArrowUpRight, MoveRight } from 'lucide-svelte';
+	import { Copyright, ArrowUpRight, MoveRight, MapPin } from 'lucide-svelte';
 	import { DotBackground } from '$lib/components/ui/GridAndDotBackground';
 	import { Spotlight } from '$lib/components/ui/Spotlight';
 	import { GradientAnimation } from '$lib/components/ui/GradientAnimation';
@@ -101,9 +101,14 @@ well-designed applications, dabbling with design, functionality, and databases."
 			<TextGenerateEffect words={subText} className="m-0 text-md md:text-3xl font-bold" />
 		</div>
 
+		<div class="mt-2 flex content-center items-center gap-2">
+			<MapPin />
+			<p class="text-sm font-bold">Davao, Philippines</p>
+		</div>
+
 		<p class="md:text-normal mt-4 hidden md:inline-block">
-			I like creating functional and well-designed applications, dabbling with design,
-			functionality, and databases.
+			I like creating functional and well-designed applications, <br /> dabbling with design, functionality,
+			and databases.
 		</p>
 
 		<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">

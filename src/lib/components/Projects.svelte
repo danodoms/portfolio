@@ -22,18 +22,17 @@
 		</div>
 	{/if}
 
-	<div class="flex flex-wrap gap-4">
+	<div class="flex grid-cols-3 flex-wrap gap-4 lg:grid">
 		<!-- RENDER EACH PROJECT -->
 		{#each projects as project}
-			<Card.Root class="flex-auto bg-cover">
-				<!-- <div>
-					<img src={project.images[0]} alt="" class="rounded" />
-				</div> -->
-
+			<Card.Root class="flex-auto  bg-cover">
+				<!-- TOP CONTENT -->
 				<!-- RENDER IMAGE/S -->
 				<div class="mb-2">
 					<img class="rounded-t-md" src={project.images[0]} alt="" />
 				</div>
+
+				<!-- BOTTOM CONTENT -->
 				<Card.Header>
 					<div class="flex flex-wrap justify-between gap-2">
 						<div class="flex items-center gap-2">

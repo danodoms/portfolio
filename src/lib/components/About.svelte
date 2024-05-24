@@ -29,7 +29,13 @@ well-designed applications, dabbling with design, functionality, and databases."
 </script>
 
 <div class="flex flex-col items-center justify-center gap-4 p-4 outline-1">
-	<h1 class="HEADING flex-initial text-6xl font-extrabold tracking-normal md:text-8xl">About</h1>
+	<!-- <h1 class="HEADING flex-initial text-6xl font-extrabold tracking-normal md:text-8xl">About</h1> -->
+
+	<h1
+		class="HEADING mt-4 flex-initial text-center text-3xl font-extrabold tracking-normal md:text-7xl"
+	>
+		About
+	</h1>
 
 	<div class="flex flex-initial flex-col gap-4 p-4">
 		<p class="text-justify indent-10 text-lg tracking-wide">

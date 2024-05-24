@@ -62,7 +62,7 @@
 <div
 	bind:this={containerRef}
 	class={cn(
-		'scroller relative z-20  max-w-sm overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] lg:max-w-7xl',
+		'scroller relative z-20  max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
 		className
 	)}
 >
