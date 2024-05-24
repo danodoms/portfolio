@@ -91,7 +91,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 	<div class="items-left justify-left mb-4 flex flex-col items-center outline-1 md:items-start">
 		<!-- <p class="m-0 text-2xl font-bold">hello i'm</p> -->
 		<h1
-			class="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent md:text-8xl"
+			class="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-left text-6xl font-extrabold tracking-tight text-transparent outline-1 outline-secondary md:text-8xl"
 		>
 			danodoms.
 		</h1>
@@ -113,9 +113,16 @@ well-designed applications, dabbling with design, functionality, and databases."
 
 		<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">
 			<!-- <AnimatedTooltip items={people} /> -->
-			<Button variant="outline" class="gap-2 text-xl font-semibold">
-				Get in touch<MoveRight />
-			</Button>
+
+			<a
+				href="https://www.facebook.com/doms.dano
+			"
+				target="_blank"
+			>
+				<Button variant="outline" class="gap-2 text-xl font-semibold">
+					Get in touch<MoveRight />
+				</Button>
+			</a>
 		</div>
 	</div>
 

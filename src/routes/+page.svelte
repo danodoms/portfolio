@@ -27,10 +27,10 @@
 	let showPracticeProjects = false;
 </script>
 
-<div class="flex flex-col justify-center gap-4">
+<div class=" flex flex-col justify-center gap-4">
 	<HeroSection />
 
-	<div class="flex flex-col justify-center gap-20">
+	<div class="mx-auto flex max-w-7xl flex-col justify-center gap-20">
 		<About />
 
 		<!-- PROJECTS SECTION -->
@@ -65,6 +65,7 @@
 		<Technologies />
 		<Personal />
 		<Contact />
-		<Footer />
 	</div>
+
+	<Footer />
 </div>

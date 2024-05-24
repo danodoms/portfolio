@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { InfiniteMovingCards } from '$lib/components/ui/InfiniteMovingCards';
+	import { fiverr } from '../icons';
 
 	const testimonials = [
 		{
@@ -126,7 +127,13 @@
 		>
 			Testimonials
 		</h1>
-		<!-- <h2 class="rounded-full font-semibold">as seen on Fiverr</h2> -->
+		<h2 class="rounded-full font-semibold">
+			what others say • as seen on
+
+			<div class="fill-primary">
+				{@html fiverr}
+			</div>
+		</h2>
 	</div>
 
 	<div class="grid grid-cols-1">

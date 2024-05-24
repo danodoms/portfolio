@@ -45,7 +45,7 @@
 </script>
 
 <nav
-	class="fixed top-0 z-50 flex w-full flex-auto gap-4 bg-background bg-opacity-50 backdrop-blur-lg"
+	class=" fixed top-0 z-50 flex w-full flex-auto gap-4 bg-background bg-opacity-50 backdrop-blur-lg"
 >
 	<div class="LEFT-SIDE flex flex-auto">
 		<a href="/" class="cursor-pointer">
@@ -135,6 +135,16 @@
 					<p>Services</p>
 					<ArrowDownRight size={12} />
 				</a>
+
+				<div class="NAV-BTN cursor-pointer" on:click={toggleMode}>
+					<Sun
+						class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+					/>
+					<Moon
+						class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+					/>
+					<span class="sr-only">Toggle theme</span>
+				</div>
 			</div>
 		{/if}
 	</div>
@@ -180,6 +190,10 @@
 </nav>
 
 <style>
+	/* .NAV-BTN {
+		@apply flex items-center gap-2 p-4 text-sm font-semibold outline-1 outline-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary;
+	} */
+
 	.NAV-BTN {
 		@apply flex items-center gap-2 p-4 text-sm font-semibold outline-1 outline-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary;
 	}

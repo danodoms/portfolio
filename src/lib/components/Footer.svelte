@@ -1,5 +1,9 @@
-<section class="flex flex-col gap-2 p-8 outline outline-1 outline-secondary">
-	<div class="flex justify-center">
+<script lang="ts">
+	import { Github } from 'lucide-svelte';
+</script>
+
+<section class="flex flex-wrap justify-center gap-4 p-8 outline outline-1 outline-secondary">
+	<!-- <div class="flex justify-center">
 		<a href="https://github.com/domsdano" class="icon" target="_blank"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,17 @@
 				></path><circle cx="38.852" cy="26.305" r="1.268" fill="#263238"></circle>
 			</svg></a
 		>
-	</div>
+	</div> -->
 
-	<p class="text-center text-xs font-bold uppercase tracking-widest">Built with SvelteKit</p>
+	<p class="text-center">Built with SvelteKit</p>
+
+	<a
+		href="https://github.com/domsdano/portfolio
+	"
+		target="_blank"
+	>
+		<div class="flex gap-2">
+			<Github class="rounded-full outline-1 outline-secondary" />
+		</div></a
+	>
 </section>

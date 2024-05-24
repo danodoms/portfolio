@@ -29,7 +29,8 @@
 		icons.express,
 		icons.php,
 		icons.wordpress,
-		icons.mongodb
+		icons.mongodb,
+		icons.nodejs
 	];
 </script>
 
@@ -60,7 +61,7 @@
 
 	<!-- FAMILIAR -->
 	<div class="flex flex-col items-center gap-4">
-		<h2 class="rounded-full font-semibold">Currently learning</h2>
+		<h2 class="rounded-full font-semibold">Actively learning</h2>
 		<div class="flex flex-wrap justify-around gap-4">
 			{#each technologies_familiar as technology}
 				<div class="size-20 flex-initial rounded p-4">

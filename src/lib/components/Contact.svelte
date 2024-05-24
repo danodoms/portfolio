@@ -28,7 +28,9 @@ well-designed applications, dabbling with design, functionality, and databases."
 	});
 </script>
 
-<div class="mx-auto flex max-w-2xl flex-col items-center justify-center gap-4 p-4 outline-1">
+<div
+	class="mx-auto flex h-screen max-w-2xl flex-col items-center justify-center gap-4 p-4 outline-1"
+>
 	<h1
 		class="HEADING mt-4 flex-initial text-center text-3xl font-extrabold tracking-normal md:text-7xl"
 	>
@@ -41,10 +43,12 @@ well-designed applications, dabbling with design, functionality, and databases."
 			out to me, and let's create something amazing!
 		</p>
 
-		<button
-			class="animate-shimmer inline-flex h-12 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+		<a
+			href="https://www.facebook.com/doms.dano"
+			target="_blank"
+			class="animate-shimmer inline-flex h-12 cursor-pointer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
 		>
 			Get in touch
-		</button>
+		</a>
 	</div>
 </div>
