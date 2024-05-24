@@ -22,36 +22,45 @@
 		</div>
 	{/if}
 
-	<div class="flex flex-wrap gap-2">
+	<div class="flex flex-wrap gap-4">
 		<!-- RENDER EACH PROJECT -->
 		{#each projects as project}
 			<Card.Root class="flex-auto bg-cover">
 				<!-- <div>
 					<img src={project.images[0]} alt="" class="rounded" />
 				</div> -->
-				<Card.Header>
-					<!-- RENDER IMAGE/S -->
-					<div class="mb-2">
-						<img class="rounded-md" src={project.images[0]} alt="" />
-					</div>
 
+				<!-- RENDER IMAGE/S -->
+				<div class="mb-2">
+					<img class="rounded-t-md" src={project.images[0]} alt="" />
+				</div>
+				<Card.Header>
 					<div class="flex flex-wrap justify-between gap-2">
-						<!-- RENDER TITLE -->
-						{#if project.link}
+						<div class="flex items-center gap-2">
+							<!-- RENDER TITLE -->
 							<Tooltip.Root>
 								<Tooltip.Trigger>
-									<a href={project.link} target="_blank" class="flex items-center gap-2">
-										<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title
-										><ArrowUpRight size="16" /></a
-									></Tooltip.Trigger
-								>
+									<Card.Title>
+										<a href="/projects/{project.slug}">{project.title}</a>
+									</Card.Title>
+								</Tooltip.Trigger>
 								<Tooltip.Content>
-									<p>Show Demo</p>
+									<p>View project details</p>
 								</Tooltip.Content>
 							</Tooltip.Root>
-						{:else}
-							<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title>
-						{/if}
+
+							<!-- RENDER SHOW DEMO -->
+							{#if project.link}
+								<Tooltip.Root>
+									<Tooltip.Trigger>
+										<a href={project.link} target="_blank"><ArrowUpRight size="16" /></a>
+									</Tooltip.Trigger>
+									<Tooltip.Content>
+										<p>Show Demo</p>
+									</Tooltip.Content>
+								</Tooltip.Root>
+							{/if}
+						</div>
 
 						<div class="flex gap-4">
 							<!-- RENDER VIEW SOURCE CODE -->
@@ -67,19 +76,6 @@
 									</Tooltip.Content>
 								</Tooltip.Root>
 							{/if}
-							<!-- RENDER SHOW DEMO -->
-							<!-- {#if project.link}
-								<Tooltip.Root>
-									<Tooltip.Trigger
-										><a href={project.link} target="_blank"
-											><SquareArrowOutUpRight size={16} class="" /></a
-										></Tooltip.Trigger
-									>
-									<Tooltip.Content>
-										<p>Show Demo</p>
-									</Tooltip.Content>
-								</Tooltip.Root>
-							{/if} -->
 						</div>
 					</div>
 

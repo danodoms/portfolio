@@ -44,7 +44,7 @@
 	});
 </script>
 
-<nav class="fixed top-0 z-20 flex w-full flex-auto gap-4 backdrop-blur-lg">
+<nav class="fixed top-0 z-50 flex w-full flex-auto gap-4 backdrop-blur-lg">
 	<div class="LEFT-SIDE flex flex-auto">
 		<a href="/" class="cursor-pointer">
 			<p class="p-3 text-xl font-extrabold">danodoms.</p>
@@ -172,7 +172,7 @@
 
 		<div class="flex cursor-pointer rounded p-2 md:hidden" on:click={handleShowNav}>
 			<ArrowDownLeft class="icon" />
-			<p class="">Menu</p>
+			<p class="font-bold">Menu</p>
 		</div>
 	</div>
 </nav>

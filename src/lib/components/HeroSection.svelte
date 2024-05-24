@@ -78,7 +78,7 @@
 		}
 	];
 
-	const subText = 'i develop things for the web.';
+	const subText = 'i build things for the web.';
 	const shortBio = `"I like creating functional and
 well-designed applications, dabbling with design, functionality, and databases."`;
 
@@ -87,7 +87,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 
 <!-- <DotBackground> -->
 
-<div class="flex h-dvh flex-wrap content-center items-center justify-center gap-2 p-4">
+<div class="flex h-screen flex-wrap content-center items-center justify-center gap-2 p-4">
 	<div class="items-left justify-left mb-4 flex flex-col items-center outline-1 md:items-start">
 		<!-- <p class="m-0 text-2xl font-bold">hello i'm</p> -->
 		<h1

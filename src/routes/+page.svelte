@@ -31,7 +31,7 @@
 
 	<!-- PROJECTS SECTION -->
 	<div class="flex flex-initial flex-col content-center gap-2 p-4">
-		<h1 class="flex-1 pr-4 text-3xl font-bold md:text-6xl">PROJECTS</h1>
+		<h1 class="mb-4 flex-1 pr-4 text-center text-3xl font-bold md:text-6xl">Projects</h1>
 		<!-- <Separator class="flex-2" /> -->
 
 		<!-- <div class="flex items-center space-x-2">
