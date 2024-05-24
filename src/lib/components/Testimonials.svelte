@@ -119,14 +119,13 @@
 	];
 </script>
 
-<section class="h-dvh flex-col items-center justify-center outline outline-1">
-	<div class="my-auto">
-		<h1
-			class="HEADING mt-4 flex-initial text-center text-3xl font-extrabold tracking-normal md:text-7xl"
-		>
-			Testimonials
-		</h1>
-
+<section class="flex flex-col items-center justify-center gap-4 outline-1">
+	<h1
+		class="HEADING mt-4 flex-initial text-center text-3xl font-extrabold tracking-normal md:text-7xl"
+	>
+		Testimonials
+	</h1>
+	<div>
 		<InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
 	</div>
 </section>

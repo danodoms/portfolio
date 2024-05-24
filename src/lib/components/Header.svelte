@@ -2,7 +2,7 @@
 	import { Separator } from '$lib/components/ui/separator';
 	import Sun from 'lucide-svelte/icons/sun';
 	import Moon from 'lucide-svelte/icons/moon';
-	import { ChevronDown, Menu, Home, Info, Code, Briefcase } from 'lucide-svelte';
+	import { ChevronDown, Menu, Home, Info, Code, Briefcase, ArrowDownRight } from 'lucide-svelte';
 	import { fly, slide, crossfade } from 'svelte/transition';
 	import { quintOut, cubicInOut, cubicIn } from 'svelte/easing';
 	import { onMount } from 'svelte';
@@ -36,15 +36,37 @@
 </script>
 
 <nav class="fixed top-0 z-20 flex w-full flex-auto gap-4 backdrop-blur-lg">
-	<div class="LEFT-SIDE my-auto flex-auto">
+	<div class="LEFT-SIDE flex flex-auto">
 		<a href="/" class="cursor-pointer">
 			<p class="p-3 text-xl font-extrabold">danodoms.</p>
 		</a>
+
+		<div class="hidden md:flex">
+			<a href="/" class="NAV-BTN">
+				<p>Home</p>
+				<ArrowDownRight size={12} />
+			</a>
+
+			<a href="/about" class="NAV-BTN">
+				<p>About</p>
+				<ArrowDownRight size={12} />
+			</a>
+
+			<a href="/projects" class="NAV-BTN">
+				<p>Projects</p>
+				<ArrowDownRight size={12} />
+			</a>
+
+			<a href="/services" class="NAV-BTN">
+				<p>Services</p>
+				<ArrowDownRight size={12} />
+			</a>
+		</div>
 	</div>
 
 	<div class="RIGHT-SIDE relative ml-auto flex flex-initial items-center">
-		<div class="hidden lg:flex">
-			<a href="/" class="NAV-BTN">
+		<div class="hidden md:flex">
+			<!-- <a href="/" class="NAV-BTN">
 				<Home size={18} />
 				<p>Home</p>
 			</a>
@@ -59,7 +81,7 @@
 			<a href="/services" class="NAV-BTN">
 				<Briefcase size={18} />
 				<p>Services</p>
-			</a>
+			</a> -->
 
 			<div class="NAV-BTN cursor-pointer" on:click={toggleMode}>
 				<Sun
@@ -75,7 +97,7 @@
 			</Button> -->
 		</div>
 
-		<div class="flex cursor-pointer rounded p-2 lg:hidden" on:click={handleShowNav}>
+		<div class="flex cursor-pointer rounded p-2 md:hidden" on:click={handleShowNav}>
 			<Menu class="icon" />
 		</div>
 
@@ -114,6 +136,6 @@
 
 <style>
 	.NAV-BTN {
-		@apply flex items-center gap-3 p-4 text-xs font-semibold uppercase outline-1 outline-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary;
+		@apply flex items-center gap-2 p-4 text-sm font-semibold outline-1 outline-secondary transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary;
 	}
 </style>

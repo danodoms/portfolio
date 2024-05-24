@@ -86,66 +86,37 @@ well-designed applications, dabbling with design, functionality, and databases."
 </script>
 
 <!-- <DotBackground> -->
-<div class="flex h-dvh flex-col content-center items-center justify-center gap-2 p-4">
-	<div class="items-left mb-4 flex flex-col items-center justify-center">
-		<GradientAnimation
-			interactive={false}
-			blendingValue="screen"
-			size="100%"
-			containerClassName="mb-4 size-auto p-4 rounded-full bg-clip-text text-6xl md:text-8xl outline outline-1 outline-secondary saturate-50"
+
+<div class="flex h-dvh flex-wrap content-center items-center justify-center gap-2 p-4">
+	<div class="items-left justify-left mb-4 flex flex-col items-center outline-1 md:items-start">
+		<!-- <p class="m-0 text-2xl font-bold">hello i'm</p> -->
+		<h1
+			class="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent md:text-8xl"
 		>
-			<h1
-				class="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text font-extrabold tracking-tight text-transparent"
-			>
-				danodoms.
-			</h1>
-		</GradientAnimation>
+			danodoms.
+		</h1>
 
 		<!-- <h1 class="text-2xl font-bold tracking-tight lg:text-2xl">plan. design. create.</h1> -->
 		<div class="flex gap-2">
-			<TextGenerateEffect words={subText} className="m-0 text-2xl font-bold" />
-			<!-- <div
-				class="  text-invisible flex content-center items-center gap-2 rounded-full bg-primary bg-clip-text px-4 font-extrabold tracking-wide outline outline-1 outline-secondary"
-			>
-				2024
-			</div> -->
+			<TextGenerateEffect words={subText} className="m-0 text-md md:text-3xl font-bold" />
 		</div>
-	</div>
 
-	<!-- <CardContainer bind:isMouseEntered className="inter-var flex flex-auto">
-			<CardBody
-				className="flex-auto bg-card flex flex-wrap outline outline-1 outline-secondary p-4 rounded dark:hover:shadow-primary/[0.1] dark:hover:shadow-2xl items-center justify-center md:px-10"
-			>
-				<CardItem
-					{isMouseEntered}
-					translateZ="50"
-					className="flex-initial md:flex-1 text-center md:text-left"
-				>
-					<TextGenerateEffect words={shortBio} className="m-0 md:text-xl font-normal italic" />
-				</CardItem>
-				<CardItem {isMouseEntered} translateZ="100" className="flex-initial md:flex-4">
-					<img
-						class="m-2 size-24 self-center rounded-full border md:size-32"
-						src="https://avatars.githubusercontent.com/u/116992939?v=4"
-						alt=""
-					/>
-				</CardItem>
-			</CardBody>
-		</CardContainer> -->
+		<p class="md:text-normal mt-4 hidden md:inline-block">
+			I like creating functional and well-designed applications, dabbling with design,
+			functionality, and databases.
+		</p>
+	</div>
 
 	<div class="flex flex-wrap items-center justify-center gap-2">
 		<div class="flex-initial">
 			<img
-				class="right-0 m-2 size-20 rounded-full p-1 outline outline-1 outline-secondary grayscale md:relative md:size-32"
+				class="right-0 m-2 size-36 rounded-full p-1 outline outline-1 outline-secondary grayscale md:relative md:size-52"
 				src="https://avatars.githubusercontent.com/u/165539900?v=4"
 				alt=""
 			/>
-		</div>
 
-		<p class="flex-1 text-balance font-thin lg:text-3xl">
-			I like creating functional and well-designed applications, dabbling with design,
-			functionality, and databases.
-		</p>
+			<!-- <img class="h-96 outline outline-1" src="./danodoms.png" alt="" /> -->
+		</div>
 	</div>
 
 	<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">
