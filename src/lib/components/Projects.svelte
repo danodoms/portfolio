@@ -5,7 +5,7 @@
 	import { Badge } from '$lib/components/ui/badge';
 	import * as HoverCard from '$lib/components/ui/hover-card';
 	import { Button } from '$lib/components/ui/MovingBorder';
-	import { SquareArrowOutUpRight, Github } from 'lucide-svelte';
+	import { SquareArrowOutUpRight, Github, ArrowUpRight } from 'lucide-svelte';
 	import * as Tooltip from '$lib/components/ui/tooltip';
 
 	export let projects: project[];
@@ -34,9 +34,24 @@
 					<div class="mb-2">
 						<img class="rounded-md" src={project.images[0]} alt="" />
 					</div>
-					<!-- RENDER TITLE -->
+
 					<div class="flex flex-wrap justify-between gap-2">
-						<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title>
+						<!-- RENDER TITLE -->
+						{#if project.link}
+							<Tooltip.Root>
+								<Tooltip.Trigger>
+									<a href={project.link} target="_blank" class="flex items-center gap-2">
+										<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title
+										><ArrowUpRight size="16" /></a
+									></Tooltip.Trigger
+								>
+								<Tooltip.Content>
+									<p>Show Demo</p>
+								</Tooltip.Content>
+							</Tooltip.Root>
+						{:else}
+							<Card.Title><a href="/projects/{project.slug}">{project.title}</a></Card.Title>
+						{/if}
 
 						<div class="flex gap-4">
 							<!-- RENDER VIEW SOURCE CODE -->
@@ -53,7 +68,7 @@
 								</Tooltip.Root>
 							{/if}
 							<!-- RENDER SHOW DEMO -->
-							{#if project.link}
+							<!-- {#if project.link}
 								<Tooltip.Root>
 									<Tooltip.Trigger
 										><a href={project.link} target="_blank"
@@ -64,7 +79,7 @@
 										<p>Show Demo</p>
 									</Tooltip.Content>
 								</Tooltip.Root>
-							{/if}
+							{/if} -->
 						</div>
 					</div>
 
