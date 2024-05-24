@@ -17,6 +17,7 @@
 	import About from '@/components/About.svelte';
 	import Footer from '@/components/Footer.svelte';
 	import Testimonials from '@/components/Testimonials.svelte';
+	import Personal from '@/components/Personal.svelte';
 
 	function togglePracticeProjects() {
 		showPracticeProjects = !showPracticeProjects;
@@ -27,37 +28,41 @@
 
 <div class="flex flex-col justify-center gap-4">
 	<HeroSection />
-	<About />
 
-	<!-- PROJECTS SECTION -->
-	<div class="flex flex-initial flex-col content-center gap-2 p-4">
-		<h1 class="mb-4 flex-1 pr-4 text-center text-3xl font-bold md:text-6xl">Projects</h1>
-		<!-- <Separator class="flex-2" /> -->
+	<div class="flex flex-col justify-center gap-20">
+		<About />
 
-		<!-- <div class="flex items-center space-x-2">
-			<Switch id="airplane-mode" on:click={togglePracticeProjects} />
-			<Label for="airplane-mode" class="font-bold">Show Practice Projects</Label>
-		</div> -->
-		<Tabs.Root value="pinned" class="flex-auto">
-			<Tabs.List class="grid w-full grid-cols-2">
-				<Tabs.Trigger value="pinned">
-					<Pin size={14} class="mr-1" />Pinned</Tabs.Trigger
-				>
-				<Tabs.Trigger value="practice">
-					<FlaskConical size={14} class="mr-1" />Practice</Tabs.Trigger
-				>
-			</Tabs.List>
-			<Tabs.Content value="pinned" class="flex-auto">
-				<Projects showTitle={false} title={'PROJECTS'} {projects} />
-			</Tabs.Content>
+		<!-- PROJECTS SECTION -->
+		<div class="flex flex-initial flex-col content-center gap-2 p-4">
+			<h1 class="mb-4 flex-1 pr-4 text-center text-3xl font-bold md:text-6xl">Projects</h1>
+			<!-- <Separator class="flex-2" /> -->
 
-			<Tabs.Content value="practice" class="flex-auto">
-				<Projects showTitle={false} title={'PROJECTS'} projects={practiceProjects} />
-			</Tabs.Content>
-		</Tabs.Root>
+			<!-- <div class="flex items-center space-x-2">
+				<Switch id="airplane-mode" on:click={togglePracticeProjects} />
+				<Label for="airplane-mode" class="font-bold">Show Practice Projects</Label>
+			</div> -->
+			<Tabs.Root value="pinned" class="flex-auto">
+				<Tabs.List class="grid w-full grid-cols-2">
+					<Tabs.Trigger value="pinned">
+						<Pin size={14} class="mr-1" />Pinned</Tabs.Trigger
+					>
+					<Tabs.Trigger value="practice">
+						<FlaskConical size={14} class="mr-1" />Practice</Tabs.Trigger
+					>
+				</Tabs.List>
+				<Tabs.Content value="pinned" class="flex-auto">
+					<Projects showTitle={false} title={'PROJECTS'} {projects} />
+				</Tabs.Content>
+
+				<Tabs.Content value="practice" class="flex-auto">
+					<Projects showTitle={false} title={'PROJECTS'} projects={practiceProjects} />
+				</Tabs.Content>
+			</Tabs.Root>
+		</div>
+
+		<Testimonials />
+		<Technologies />
+		<Personal />
+		<Footer />
 	</div>
-
-	<Testimonials />
-	<Technologies />
-	<Footer />
 </div>

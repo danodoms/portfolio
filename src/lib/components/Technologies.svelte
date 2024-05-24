@@ -8,14 +8,14 @@
 
 	const technologies_proficient = [
 		icons.javascript,
+		icons.typescript,
+		icons.html,
+		icons.tailwindcss,
 		icons.mysql,
 		icons.react,
 		icons.svelte,
 		icons.firebase,
 		icons.java,
-		icons.typescript,
-		icons.tailwindcss,
-		icons.html,
 		icons.linux,
 		icons.git,
 		icons.bootstrap
@@ -28,11 +28,12 @@
 		icons.flutter,
 		icons.express,
 		icons.php,
-		icons.wordpress
+		icons.wordpress,
+		icons.mongodb
 	];
 </script>
 
-<div class=" flex flex-col justify-center gap-4 p-4 pt-20">
+<div class=" flex flex-col justify-center gap-4 p-4">
 	<!-- <div class="flex flex-initial items-center">
 		<h1 class="text-nowrap pr-4 text-2xl font-bold md:text-6xl">Technologies Used</h1>
 		<Separator class="flex-auto" />
@@ -46,7 +47,7 @@
 
 	<!-- PROFICIENT -->
 	<div class="mb-8 flex flex-col items-center gap-4 rounded-md">
-		<h2 class="rounded-full font-semibold">Proficient with</h2>
+		<h2 class="rounded-full font-semibold">Skilled with</h2>
 
 		<div class="flex flex-wrap justify-around gap-4">
 			{#each technologies_proficient as technology}

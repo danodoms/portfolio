@@ -11,7 +11,7 @@ export const projects: project[] = [
 		slug: 'find-my-anime',
 		repo: 'https://github.com/domsdano/find-my-anime',
 		images: ['../projects/find-my-anime/1.png'],
-		technologies: ['React', 'Firebase', 'Daisy UI', 'jikan API'],
+		technologies: ['React', 'Firebase', 'Daisy UI', 'PWA', 'jikan API'],
 		contributors: []
 	},
 

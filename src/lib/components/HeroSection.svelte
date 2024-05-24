@@ -105,6 +105,13 @@ well-designed applications, dabbling with design, functionality, and databases."
 			I like creating functional and well-designed applications, dabbling with design,
 			functionality, and databases.
 		</p>
+
+		<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">
+			<!-- <AnimatedTooltip items={people} /> -->
+			<Button variant="outline" class="gap-2 text-xl font-semibold">
+				Get in touch<MoveRight />
+			</Button>
+		</div>
 	</div>
 
 	<div class="flex flex-wrap items-center justify-center gap-2">
@@ -117,13 +124,6 @@ well-designed applications, dabbling with design, functionality, and databases."
 
 			<!-- <img class="h-96 outline outline-1" src="./danodoms.png" alt="" /> -->
 		</div>
-	</div>
-
-	<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">
-		<!-- <AnimatedTooltip items={people} /> -->
-		<!-- <Button variant="outline" class="gap-2 text-xl font-semibold">
-			Get in touch<MoveRight />
-		</Button> -->
 	</div>
 </div>
 <!-- </DotBackground> -->

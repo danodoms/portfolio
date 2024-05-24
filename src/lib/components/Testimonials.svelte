@@ -120,11 +120,15 @@
 </script>
 
 <section class="flex flex-col items-center justify-center gap-4 outline-1">
-	<h1
-		class="HEADING mt-4 flex-initial text-center text-3xl font-extrabold tracking-normal md:text-7xl"
-	>
-		Testimonials
-	</h1>
+	<div class="flex flex-col items-center">
+		<h1
+			class="HEADING mt-4 flex-initial text-center text-3xl font-extrabold tracking-normal md:text-7xl"
+		>
+			Testimonials
+		</h1>
+		<!-- <h2 class="rounded-full font-semibold">as seen on Fiverr</h2> -->
+	</div>
+
 	<div>
 		<InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
 	</div>
