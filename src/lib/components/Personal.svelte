@@ -28,7 +28,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 	});
 </script>
 
-<div class="flex flex-col items-center justify-center gap-4 p-4 outline-1">
+<div class="mx-auto flex max-w-2xl flex-col items-center justify-center gap-4 p-4 outline-1">
 	<h1
 		class="HEADING mt-4 flex-initial text-center text-3xl font-extrabold tracking-normal md:text-7xl"
 	>
@@ -37,8 +37,8 @@ well-designed applications, dabbling with design, functionality, and databases."
 
 	<div class="flex flex-initial flex-col gap-4 p-4">
 		<p class="text-justify indent-10 text-lg tracking-wide">
-			Before being introduced to development, I am fond of graphic design and developed an eye for
-			design, although design is very subjective.
+			Before being introduced into the world of development, I am fond of graphic design and
+			developed an eye for design, although design is very subjective.
 		</p>
 
 		<p class="text-justify indent-10 text-lg tracking-wide">

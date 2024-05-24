@@ -18,6 +18,7 @@
 	import Footer from '@/components/Footer.svelte';
 	import Testimonials from '@/components/Testimonials.svelte';
 	import Personal from '@/components/Personal.svelte';
+	import Contact from '@/components/Contact.svelte';
 
 	function togglePracticeProjects() {
 		showPracticeProjects = !showPracticeProjects;
@@ -63,6 +64,7 @@
 		<Testimonials />
 		<Technologies />
 		<Personal />
+		<Contact />
 		<Footer />
 	</div>
 </div>
