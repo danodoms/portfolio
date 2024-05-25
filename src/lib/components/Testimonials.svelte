@@ -127,13 +127,19 @@
 		>
 			Testimonials
 		</h1>
-		<h2 class="rounded-full font-semibold">
-			what others say • as seen on
 
-			<div class="fill-primary">
-				{@html fiverr}
+		<div class="flex content-center gap-2">
+			<h2 class="rounded-full font-semibold">
+				what others say • as seen on
+
+				<!-- <div class="fill-primary">
+					{@html fiverr}
+				</div> -->
+			</h2>
+			<div class="my-auto rounded-full fill-background px-2 text-sm font-bold outline outline-1">
+				fiverr``
 			</div>
-		</h2>
+		</div>
 	</div>
 
 	<div class="grid grid-cols-1">

@@ -38,9 +38,9 @@ well-designed applications, dabbling with design, functionality, and databases."
 	</h1>
 
 	<div class="flex flex-initial flex-col gap-4 p-4">
-		<p class="text-justify indent-10 text-lg font-semibold tracking-wide">
-			Have a project in mind? I'm always excited to collaborate on new and exciting ventures. Reach
-			out to me, and let's create something amazing!
+		<p class="text-balance text-center text-lg font-semibold tracking-wide md:text-2xl">
+			Got a project in mind? I'm eager to collaborate on exciting new ventures. Reach out and let's
+			bring your vision to life!
 		</p>
 
 		<a
