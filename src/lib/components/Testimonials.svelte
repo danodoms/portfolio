@@ -137,7 +137,7 @@
 				</div> -->
 			</h2>
 			<div class="my-auto rounded-full fill-background px-2 text-sm font-bold outline outline-1">
-				fiverr``
+				fiverr
 			</div>
 		</div>
 	</div>

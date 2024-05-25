@@ -5,6 +5,7 @@
 	import { text } from '@sveltejs/kit';
 	import { animate } from 'motion';
 	import { onMount } from 'svelte';
+	import Button from './ui/MovingBorder/Button.svelte';
 	const heading = [
 		{
 			text: 'HI'
@@ -43,12 +44,20 @@ well-designed applications, dabbling with design, functionality, and databases."
 			bring your vision to life!
 		</p>
 
-		<a
+		<!-- <a
 			href="https://www.facebook.com/doms.dano"
 			target="_blank"
 			class="animate-shimmer inline-flex h-12 cursor-pointer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
 		>
 			Get in touch
+		</a> -->
+
+		<a href="https://www.facebook.com/doms.dano" class="flex" target="_blank">
+			<Button
+				borderRadius="0.5rem"
+				className="flex-auto animate-shimmer inline-flex h-12 cursor-pointer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+				>Get in touch
+			</Button>
 		</a>
 	</div>
 </div>

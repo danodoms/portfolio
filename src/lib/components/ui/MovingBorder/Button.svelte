@@ -10,7 +10,7 @@
 </script>
 
 <button
-	class={cn('relative overflow-hidden p-2 text-xl ', containerClassName)}
+	class={cn('relative w-full overflow-hidden bg-transparent p-[1px] text-xl ', containerClassName)}
 	style={`border-radius: ${borderRadius};`}
 	{...$$props}
 >
@@ -18,15 +18,16 @@
 		<MovingBorder {duration} rx="30%" ry="30%">
 			<div
 				class={cn(
-					'h-1 w-1 bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)] p-6 opacity-[0.8]',
+					'h-20 w-20 bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)] opacity-[0.8]',
 					borderClassName
 				)}
 			/>
 		</MovingBorder>
 	</div>
+
 	<div
 		class={cn(
-			'relative flex h-full w-full items-center justify-center p-2 backdrop-blur-xl',
+			'relative flex h-full w-full items-center justify-center border border-slate-800 bg-slate-900/[0.8] text-sm text-white antialiased backdrop-blur-xl',
 			className
 		)}
 		style={`border-radius: calc(${borderRadius} * 0.96);`}

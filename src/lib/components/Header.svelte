@@ -72,7 +72,7 @@
 					<p class="font-bold uppercase">Menu</p>
 				</div>
 			</Sheet.Trigger>
-			<Sheet.Content side="top">
+			<Sheet.Content side="top" class="bg-opacity-0 backdrop-blur-lg">
 				<Sheet.Header>
 					<Sheet.Title class="font-extrabold">danodoms.</Sheet.Title>
 					<Sheet.Description class="align-center flex flex-col justify-end">

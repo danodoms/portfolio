@@ -2,7 +2,9 @@
 	import { Github } from 'lucide-svelte';
 </script>
 
-<section class="flex flex-wrap justify-center gap-4 p-8 outline outline-1 outline-secondary">
+<section
+	class="flex flex-wrap content-center items-center justify-center gap-4 p-4 outline outline-1 outline-secondary"
+>
 	<!-- <div class="flex justify-center">
 		<a href="https://github.com/domsdano" class="icon" target="_blank"
 			><svg
@@ -42,8 +44,8 @@
 	"
 		target="_blank"
 	>
-		<div class="flex gap-2">
-			<Github class="rounded-full outline-1 outline-secondary" />
+		<div class="flex items-center gap-2">
+			<Github class="size-5 rounded-full outline-1 outline-secondary" />
 		</div></a
 	>
 </section>
