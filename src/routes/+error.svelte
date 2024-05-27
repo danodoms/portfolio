@@ -1,4 +1,4 @@
-<div class="flex h-screen items-center justify-center bg-gray-100">
+<div class="flex h-screen items-center justify-center">
 	<div class="flex flex-col items-center text-center align-middle">
 		<img
 			class="mb-4 size-48 md:size-64"
@@ -17,12 +17,12 @@
 				clip-rule="evenodd"
 			/>
 		</svg> -->
-		<h1 class="mb-2 text-4xl font-extrabold text-gray-900">Coming Soon</h1>
-		<p class=" text-lg text-gray-600">This page is under construction</p>
-		<p class="mb-4 text-gray-600">- danodoms</p>
+		<h1 class="mb-2 text-4xl font-extrabold">Coming Soon</h1>
+		<p class=" text-lg">This page is under construction</p>
+		<p class="mb-4">- danodoms</p>
 		<a
 			href="/"
-			class="button inline-block rounded-lg bg-blue-600 px-6 py-4 text-lg font-medium text-white outline outline-1 outline-secondary hover:bg-blue-700"
+			class="button inline-block rounded-lg px-6 py-4 text-lg font-medium text-white outline outline-1 outline-secondary hover:opacity-70"
 			>Go to Home</a
 		>
 	</div>
