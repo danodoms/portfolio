@@ -78,9 +78,9 @@
 		}
 	];
 
-	const subText = 'I build things for the web.';
+	const subText = 'ReactJS web and mobile developer';
 	const shortBio = `"I like creating functional and
-well-designed applications, dabbling with design, functionality, and databases."`;
+well-designed applications, dabbling with design, functionality, and databases. providing end to end solutions"`;
 
 	let isMouseEntered = false;
 </script>
@@ -88,13 +88,15 @@ well-designed applications, dabbling with design, functionality, and databases."
 <!-- <DotBackground> -->
 
 <div class="flex h-screen flex-wrap content-center items-center justify-center gap-2 p-4">
-	<div class="items-left justify-left mb-4 flex flex-col items-center outline-1 md:items-start">
-		<!-- <p class="m-0 text-2xl font-bold">hello i'm</p> -->
+	<div class="items-left justify-left mb-4 flex flex-col items-center outline-1 md:items-start text-left">
+
 		<h1
-			class="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-left text-6xl font-extrabold tracking-tight text-transparent outline-1 outline-secondary md:text-8xl"
-		>
-			danodoms.
+			class="bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-violet-500 text-left text-6xl font-extrabold tracking-tighter md:text-8xl -ml-1"
+		>danodoms
 		</h1>
+
+
+
 
 		<!-- <h1 class="text-2xl font-bold tracking-tight lg:text-2xl">plan. design. create.</h1> -->
 		<div class="flex gap-2">
@@ -102,7 +104,7 @@ well-designed applications, dabbling with design, functionality, and databases."
 		</div>
 
 		<div class="flex gap-4">
-			<!-- <a href="https://github.com/domsdano" target="_blank" class="">
+			 <!--<a href="https://github.com/domsdano" target="_blank" class="">
 				<svg viewBox="0 0 128 128" class="icon">
 					<g fill={'currentColor'}>
 						<path
@@ -114,17 +116,16 @@ well-designed applications, dabbling with design, functionality, and databases."
 						></path>
 					</g>
 				</svg>
-			</a> -->
+			</a>-->
 
-			<div class="mt-2 flex content-center items-center gap-2">
-				<MapPin />
-				<p class="text-sm font-bold">Davao, Philippines</p>
+			<div class="mt-2 flex content-center items-center gap-1">
+				<MapPin class="size-4"/>
+				<p class="text-sm font-bold">Davao Oriental, Philippines</p>
 			</div>
 		</div>
 
 		<p class="md:text-normal mt-4 hidden md:inline-block">
-			I like creating functional and well-designed applications, <br /> dabbling with design, functionality,
-			and databases.
+			I create functional, visually appealing applications <br/> with seamless end-to-end solutions.
 		</p>
 
 		<div class="mt-4 flex flex-initial flex-wrap items-center gap-8">

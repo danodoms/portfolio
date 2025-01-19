@@ -1,28 +1,7 @@
 <script lang="ts">
-	import { TypewriterEffectSmooth, TypewriterEffect } from '$lib/components/ui/TypewriterEffect';
-	import { CardContainer, CardBody, CardItem } from '$lib/components/ui/ThreeDCardEffect';
-	import { TextGenerateEffect } from '$lib/components/ui/TextGenerateEffect';
-	import { text } from '@sveltejs/kit';
-	import { animate } from 'motion';
 	import { onMount } from 'svelte';
 	import Button from './ui/MovingBorder/Button.svelte';
-	const heading = [
-		{
-			text: 'HI'
-		},
-		{
-			text: 'IM'
-		},
-		{
-			text: 'DOM.'
-		}
-	];
 
-	const subText = 'plan. design. create.';
-	const shortBio = `"I like creating functional and
-well-designed applications, dabbling with design, functionality, and databases."`;
-
-	let isMouseEntered = false;
 
 	onMount(() => {
 		// animate('.HEADING', { x: '200px' }, { duration: 1 });
