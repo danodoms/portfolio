@@ -132,7 +132,7 @@ well-designed applications, dabbling with design, functionality, and databases. 
 			<!-- <AnimatedTooltip items={people} /> -->
 
 			<a
-				href="https://www.facebook.com/doms.dano
+				href="https://www.linkedin.com/in/dominador-dano-jr-97b9001a0/
 			"
 				target="_blank"
 			>
