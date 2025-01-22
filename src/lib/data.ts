@@ -1,6 +1,40 @@
 import type { project } from '$lib/types';
 
-export const projects: project[] = [
+
+
+export const notableProjects: project[] = [
+	{
+		title: 'evento',
+		description:
+			'QR Code based events attendance web app',
+		link: 'https://eventoportal.netlify.app',
+		longDescription: ['This is a PWA, which means it can be installed', ''],
+		features: ['Attendance Tracking', 'Data Persistence'],
+		slug: 'evento',
+		repo: 'https://github.com/danodoms/evento',
+		images: [],
+		technologies: ['React', 'NextJS', 'Supabase', 'TanStack Query'],
+		contributors: [],
+		impacts:["Successfully serves over 1,000 users", "Attendance logging sped up by 5x, reducing wait times"]
+	},
+	{
+		title: 'XR Vision',
+		description:
+			'AI-Powered Rice Leaf NPK Deficiency Detector Mobile App ',
+		link: '',
+		longDescription: [],
+		features: ['On-device AI', 'Data Persistence'],
+		slug: 'xr-vision',
+		repo: 'https://github.com/danodoms/XR-Vision',
+		images: [],
+		technologies: ['React Native', 'Expo','Tensorflow', 'Supabase', 'Legend State'],
+		contributors: [],
+		impacts:["On-device AI processing", "Realtime analysis"]
+	}
+];
+
+
+	export const projects: project[] = [
 	{
 		title: 'Find My Anime',
 		description:
@@ -12,7 +46,8 @@ export const projects: project[] = [
 		repo: 'https://github.com/domsdano/find-my-anime',
 		images: ['../projects/find-my-anime/1.png'],
 		technologies: ['React', 'Firebase', 'Daisy UI', 'PWA', 'jikan API'],
-		contributors: []
+		contributors: [],
+		impacts:[]
 	},
 
 	{
@@ -25,7 +60,8 @@ export const projects: project[] = [
 		repo: 'https://github.com/domsdano/dorsu-library',
 		images: ['../projects/dorsu-library/1.png'],
 		technologies: ['Svelte', 'SvelteKit', 'Daisy UI'],
-		contributors: []
+		contributors: [],
+		impacts:[]
 	},
 	{
 		title: 'Fingerprint Attendance System',
@@ -52,7 +88,8 @@ export const projects: project[] = [
 				name: 'Henry Torlao Jr.',
 				link: 'https://github.com/GrinHornet'
 			}
-		]
+		],
+		impacts:[]
 	},
 	{
 		title: 'My Portfolio',
@@ -64,7 +101,8 @@ export const projects: project[] = [
 		repo: 'https://github.com/domsdano/portfolio',
 		images: [],
 		technologies: ['SvelteKit', 'shadcn-svelte'],
-		contributors: []
+		contributors: [],
+		impacts:[]
 	}
 ];
 
@@ -79,7 +117,8 @@ export const practiceProjects: project[] = [
 		repo: 'https://github.com/domsdano/time-sync-react-native',
 		images: [],
 		technologies: ['React Native', 'Laravel', 'WatermelonDB', 'shadcn'],
-		contributors: []
+		contributors: [],
+		impacts:[]
 	},
 	{
 		title: 'Sound Up',
@@ -91,7 +130,8 @@ export const practiceProjects: project[] = [
 		repo: 'https://github.com/domsdano/sound-up',
 		images: [],
 		technologies: ['HTML', 'CSS', 'Javascript', 'Last.fm API'],
-		contributors: []
+		contributors: [],
+		impacts:[]
 	},
 	{
 		title: 'Blu POS',
@@ -103,7 +143,8 @@ export const practiceProjects: project[] = [
 		repo: 'https://github.com/domsdano/Point-of-Sale-System',
 		images: [],
 		technologies: ['Java'],
-		contributors: []
+		contributors: [],
+		impacts:[]
 	},
 	{
 		title: 'Employee CRUD',
@@ -116,6 +157,8 @@ export const practiceProjects: project[] = [
 		repo: 'https://github.com/domsdano/employee-crud',
 		images: [],
 		technologies: ['Laravel', 'MySQL'],
-		contributors: []
+		contributors: [],
+		impacts:[]
 	}
 ];
+

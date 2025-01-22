@@ -9,6 +9,7 @@ export interface project {
 	images: string[];
 	technologies: string[];
 	contributors: contributor[];
+	impacts:string[];
 }
 
 export interface contributor {
