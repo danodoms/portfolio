@@ -27,7 +27,7 @@
 				'00020101021127830012com.p2pqrpay0111GXCHPHM2XXX02089996440303152170200000006560417DWQM4TK3JDNY4XKXX5204601653036085802PH5915DO******R J* D.6009Poblacion6104123463048325'
 		},
 		{
-			name: 'Seabank',
+			name: 'SeaBank',
 			textColor: 'text-orange-500',
 			bgColor: 'bg-orange-500',
 			accountName: 'DOMINADOR DANO JR',
@@ -63,12 +63,14 @@
 
 <div class="flex h-screen flex-col items-center justify-center p-4 text-center">
 	{#if selectedMethod}
-		<div class={cn('qr-wrapper flex flex-col items-center gap-4')}>
+		<div class={cn('qr-wrapper flex flex-col items-center gap-2')}>
 			<h2 class={cn('text-2xl font-bold tracking-tighter ', selectedMethod.textColor)}>
 				{selectedMethod.name}
 			</h2>
 
-			<div class="container -m-20 flex scale-50 flex-col items-center justify-center">
+			<div
+				class="container -m-20 flex scale-50 flex-col items-center justify-center rounded-xl bg-white p-8"
+			>
 				<QrCode value={selectedMethod.qrData} class="border border-blue-500" size="500" />
 			</div>
 
