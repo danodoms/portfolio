@@ -68,8 +68,8 @@
 				{selectedMethod.name}
 			</h2>
 
-			<div class="container flex flex-col items-center justify-center">
-				<QrCode value={selectedMethod.qrData} class="border border-blue-500" size="200" />
+			<div class="container -m-20 flex scale-50 flex-col items-center justify-center">
+				<QrCode value={selectedMethod.qrData} class="border border-blue-500" size="500" />
 			</div>
 
 			<div>
@@ -92,7 +92,7 @@
 					<Button
 						on:click={() => handleSelect(method)}
 						class={cn(
-							'w-full max-w-40 rounded-xl px-8 py-6 text-lg font-bold text-white',
+							'mask-t-from-50% w-full max-w-40 rounded-xl px-8 py-6 text-lg font-bold text-white',
 							method.bgColor
 						)}
 					>
