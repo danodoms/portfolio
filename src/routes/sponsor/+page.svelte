@@ -63,7 +63,7 @@
 
 <div class="flex h-screen flex-col items-center justify-center p-4 text-center">
 	{#if selectedMethod}
-		<div class={cn('qr-wrapper flex flex-col items-center gap-2')}>
+		<div class={cn('qr-wrapper flex flex-col items-center ')}>
 			<h2 class={cn('text-2xl font-bold tracking-tighter ', selectedMethod.textColor)}>
 				{selectedMethod.name}
 			</h2>
